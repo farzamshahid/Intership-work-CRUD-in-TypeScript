@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee-record</title>
+    <script src="crud.js"></script>
+    <link rel="stylesheet" href="emp.css">
+</head>
+
+<body>
+    <h1>Employee-Record</h1>
+    <form id="emp">
+        <div style="display:none;">
+            <label>id</label>
+            <input type="number" id="id" placeholder="Enter your id">
+            <span id="id-error" style="display:none;">id is required</span>
+        </div>
+        <br>
+
+        <div>
+            <label>Name</label>
+            <input type="text" id="nameInput" placeholder="Enter your Name">
+            <span id="nameinput-error" style="display:none;">name is required</span>
+        </div>
+        <br>
+
+        <div>
+            <label>Qualification</label>
+            <input type="text" id="qualification" placeholder="Enter your qualification">
+            <span id="qualification-error" style="display:none;">qualification is required</span>
+        </div>
+        <br>
+
+        <div>
+            <label>Registration-number</label>
+            <input type="text" id="registrationno" placeholder="Enter your registration-number">
+            <span id="registrationno-error" style="display:none;">registrationno is required</span>
+        </div>
+        <br>
+
+        <div>
+            <label>Experience</label>
+            <input type="text" id="experience" placeholder="Enter your experience">
+            <span id="experience-error" style="display:none;">experience is required</span>
+        </div>
+        <br>
+
+        <div>
+            <label>Cnic</label>
+            <input type="text" id="cnic" placeholder="Enter your cnic">
+            <span id="cnic-error" style="display:none;">cnic is required</span>
+        </div>
+        <br>
+
+        <div>
+            <input type="button" value="add" id="btnadd" onclick="addfunction()">
+            <input type="button" value="update" disabled="disabled" id="btnup" onclick="update()">
+        </div>
+
+        <div>
+            <br>
+            <input type="text" id="edited" placeholder="Enter registration no">
+            <input type="button" value="edit" onclick="editfunction()">
+            <span id="edit-error" style="display:none;">please fill this</span>
+        </div>
+        <br>
+        <div>
+            <input type="text" id="delete" placeholder="Enter registration no">
+            <input type="button" value="delete " onclick="deletefunction()">
+            <span id="delete-error" style="display:none;">please enter to delete</span>
+        </div>
+    </form>
+</body>
+
+</html>
